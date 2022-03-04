@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+:root {
+  --primary-background-color: #5a51da;
+  --primary-color: #ffffff;
+  --secondary-button-color: #b1b1b1;
+  --footer-color: #14035e;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--primary-background-color);
+  margin: 0;
+  padding: 0;
+  font-family: "Lato";
+  overflow-x: hidden;
+}
+
+h1 h2 {
+  margin: 0;
+}
+
+.title {
+  text-align: center;
+  color: var(--primary-color);
+  margin-top: 1.32em;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  color: var(--primary-color);
+}
+
+.container img {
+  height: 15em;
+  width: 22em;
+}
+
+.container .dropdown-container {
+  display: none;
+  text-align: left;
+}
+
+.container .dropdown-container hr {
+  color: var(--primary-color);
+}
+
+.container section {
+  margin: 2em;
+  width: 85%;
+}
+
+button {
+  background: var(--primary-color);
+  padding: 0.5em;
+  border-radius: 0.4em;
+  border: none;
+  border-radius: 0.4em;
+  -webkit-box-shadow: 0px 4px var(--secondary-button-color);
+          box-shadow: 0px 4px var(--secondary-button-color);
+  cursor: pointer;
+}
+
+#new-dinner {
+  margin: 1.5em auto;
+  font-size: 2em;
+  -webkit-box-shadow: 0px 6px var(--secondary-button-color);
+          box-shadow: 0px 6px var(--secondary-button-color);
+  display: block;
+  text-align: center;
+}
+
+footer {
+  width: 100vw;
+  background-color: var(--footer-color);
+  color: var(--primary-color);
+  padding: 1.5em;
+  bottom: 0;
+}
+
+@media only screen and (min-width: 768px) {
+  .container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+/*# sourceMappingURL=main.css.map */
